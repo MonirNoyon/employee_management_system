@@ -1,0 +1,7 @@
+<!-- employees/templates/employees/home.html -->
+<h1>Employee List</h1>
+<ul>
+{% for employee in employees %}
+    <li>{{ employee.name }} - {{ employee.designation }}<br>{{ employee.description }}</li>
+{% endfor %}
+</ul>

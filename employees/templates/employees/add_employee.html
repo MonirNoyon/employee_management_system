@@ -1,0 +1,7 @@
+<!-- employees/templates/employees/add_employee.html -->
+<h2>Add Employee</h2>
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Add Employee</button>
+</form>

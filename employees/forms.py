@@ -12,5 +12,6 @@ class EmployeeForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         if self.instance.pk:
+            # Disable salary and designation if editing
             self.fields['salary'].disabled = True
             self.fields['designation'].disabled = True
